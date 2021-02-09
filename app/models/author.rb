@@ -1,5 +1,6 @@
 class Author < ApplicationRecord
-
+    has_one :address
+    
     def full_name
        return "#{self.first_name} #{self.last_name}"
     end
